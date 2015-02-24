@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3006F5451A83817200490FFC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3006F5441A83817200490FFC /* QuartzCore.framework */; };
+		3006F5471A83817C00490FFC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3006F5461A83817C00490FFC /* GLKit.framework */; };
+		307986A41A7ECA0200831670 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 307986A31A7ECA0200831670 /* main.m */; };
+		307986A71A7ECA0200831670 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 307986A61A7ECA0200831670 /* AppDelegate.m */; };
+		307986AD1A7ECA0200831670 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307986AB1A7ECA0200831670 /* MainStoryboard.storyboard */; };
+		307986AF1A7ECA0200831670 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307986AE1A7ECA0200831670 /* Images.xcassets */; };
+		307986B21A7ECA0200831670 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307986B01A7ECA0200831670 /* LaunchScreen.xib */; };
+		307986BE1A7ECA0300831670 /* Kraho_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 307986BD1A7ECA0300831670 /* Kraho_Tests.m */; };
+		307986C81A7EDBC600831670 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307986C71A7EDBC600831670 /* OpenGLES.framework */; };
+		30F77D4E1A8D158A00DE4F0B /* MainGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F77D4D1A8D158A00DE4F0B /* MainGLKViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		307986B81A7ECA0300831670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307986961A7ECA0200831670 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3079869D1A7ECA0200831670;
+			remoteInfo = "Krahô";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3006F5441A83817200490FFC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3006F5461A83817C00490FFC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3079869E1A7ECA0200831670 /* Krahô.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Krahô.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307986A21A7ECA0200831670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307986A31A7ECA0200831670 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		307986A51A7ECA0200831670 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		307986A61A7ECA0200831670 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		307986AC1A7ECA0200831670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		307986AE1A7ECA0200831670 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		307986B11A7ECA0200831670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		307986B71A7ECA0300831670 /* KrahôTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KrahôTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		307986BC1A7ECA0300831670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307986BD1A7ECA0300831670 /* Kraho_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kraho_Tests.m; sourceTree = "<group>"; };
+		307986C71A7EDBC600831670 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		30F77D4C1A8D158A00DE4F0B /* MainGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGLKViewController.h; sourceTree = "<group>"; };
+		30F77D4D1A8D158A00DE4F0B /* MainGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGLKViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3079869B1A7ECA0200831670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3006F5471A83817C00490FFC /* GLKit.framework in Frameworks */,
+				3006F5451A83817200490FFC /* QuartzCore.framework in Frameworks */,
+				307986C81A7EDBC600831670 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307986B41A7ECA0300831670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3006F5491A869C3D00490FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3006F5461A83817C00490FFC /* GLKit.framework */,
+				3006F5441A83817200490FFC /* QuartzCore.framework */,
+				307986C71A7EDBC600831670 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		307986951A7ECA0200831670 = {
+			isa = PBXGroup;
+			children = (
+				3006F5491A869C3D00490FFC /* Frameworks */,
+				307986A01A7ECA0200831670 /* Krahô */,
+				307986BA1A7ECA0300831670 /* KrahôTests */,
+				3079869F1A7ECA0200831670 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3079869F1A7ECA0200831670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3079869E1A7ECA0200831670 /* Krahô.app */,
+				307986B71A7ECA0300831670 /* KrahôTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307986A01A7ECA0200831670 /* Krahô */ = {
+			isa = PBXGroup;
+			children = (
+				307986A51A7ECA0200831670 /* AppDelegate.h */,
+				307986A61A7ECA0200831670 /* AppDelegate.m */,
+				307986AB1A7ECA0200831670 /* MainStoryboard.storyboard */,
+				307986AE1A7ECA0200831670 /* Images.xcassets */,
+				307986B01A7ECA0200831670 /* LaunchScreen.xib */,
+				307986A11A7ECA0200831670 /* Supporting Files */,
+				30F77D4C1A8D158A00DE4F0B /* MainGLKViewController.h */,
+				30F77D4D1A8D158A00DE4F0B /* MainGLKViewController.m */,
+			);
+			path = "Krahô";
+			sourceTree = "<group>";
+		};
+		307986A11A7ECA0200831670 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				307986A21A7ECA0200831670 /* Info.plist */,
+				307986A31A7ECA0200831670 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		307986BA1A7ECA0300831670 /* KrahôTests */ = {
+			isa = PBXGroup;
+			children = (
+				307986BD1A7ECA0300831670 /* Kraho_Tests.m */,
+				307986BB1A7ECA0300831670 /* Supporting Files */,
+			);
+			path = "KrahôTests";
+			sourceTree = "<group>";
+		};
+		307986BB1A7ECA0300831670 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				307986BC1A7ECA0300831670 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3079869D1A7ECA0200831670 /* Krahô */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307986C11A7ECA0300831670 /* Build configuration list for PBXNativeTarget "Krahô" */;
+			buildPhases = (
+				3079869A1A7ECA0200831670 /* Sources */,
+				3079869B1A7ECA0200831670 /* Frameworks */,
+				3079869C1A7ECA0200831670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Krahô";
+			productName = "Krahô";
+			productReference = 3079869E1A7ECA0200831670 /* Krahô.app */;
+			productType = "com.apple.product-type.application";
+		};
+		307986B61A7ECA0300831670 /* KrahôTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307986C41A7ECA0300831670 /* Build configuration list for PBXNativeTarget "KrahôTests" */;
+			buildPhases = (
+				307986B31A7ECA0300831670 /* Sources */,
+				307986B41A7ECA0300831670 /* Frameworks */,
+				307986B51A7ECA0300831670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307986B91A7ECA0300831670 /* PBXTargetDependency */,
+			);
+			name = "KrahôTests";
+			productName = "KrahôTests";
+			productReference = 307986B71A7ECA0300831670 /* KrahôTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		307986961A7ECA0200831670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "VicSoft Sistemas";
+				TargetAttributes = {
+					3079869D1A7ECA0200831670 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					307986B61A7ECA0300831670 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3079869D1A7ECA0200831670;
+					};
+				};
+			};
+			buildConfigurationList = 307986991A7ECA0200831670 /* Build configuration list for PBXProject "Krahô" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 307986951A7ECA0200831670;
+			productRefGroup = 3079869F1A7ECA0200831670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3079869D1A7ECA0200831670 /* Krahô */,
+				307986B61A7ECA0300831670 /* KrahôTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3079869C1A7ECA0200831670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307986AD1A7ECA0200831670 /* MainStoryboard.storyboard in Resources */,
+				307986B21A7ECA0200831670 /* LaunchScreen.xib in Resources */,
+				307986AF1A7ECA0200831670 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307986B51A7ECA0300831670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3079869A1A7ECA0200831670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F77D4E1A8D158A00DE4F0B /* MainGLKViewController.m in Sources */,
+				307986A71A7ECA0200831670 /* AppDelegate.m in Sources */,
+				307986A41A7ECA0200831670 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307986B31A7ECA0300831670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307986BE1A7ECA0300831670 /* Kraho_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		307986B91A7ECA0300831670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3079869D1A7ECA0200831670 /* Krahô */;
+			targetProxy = 307986B81A7ECA0300831670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		307986AB1A7ECA0200831670 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307986AC1A7ECA0200831670 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		307986B01A7ECA0200831670 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				307986B11A7ECA0200831670 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		307986BF1A7ECA0300831670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		307986C01A7ECA0300831670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		307986C21A7ECA0300831670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Krahô/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		307986C31A7ECA0300831670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Krahô/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		307986C51A7ECA0300831670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KrahôTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Krahô.app/Krahô";
+			};
+			name = Debug;
+		};
+		307986C61A7ECA0300831670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KrahôTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Krahô.app/Krahô";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		307986991A7ECA0200831670 /* Build configuration list for PBXProject "Krahô" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307986BF1A7ECA0300831670 /* Debug */,
+				307986C01A7ECA0300831670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307986C11A7ECA0300831670 /* Build configuration list for PBXNativeTarget "Krahô" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307986C21A7ECA0300831670 /* Debug */,
+				307986C31A7ECA0300831670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307986C41A7ECA0300831670 /* Build configuration list for PBXNativeTarget "KrahôTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307986C51A7ECA0300831670 /* Debug */,
+				307986C61A7ECA0300831670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 307986961A7ECA0200831670 /* Project object */;
+}
