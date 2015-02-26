@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CC211530-0BD8-481D-B713-19C07818C85F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Krahô</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C7EF876F756E31F642D2B6888014AD3D605C0D43</key>
+		<string>https://github.com/VicSoft/kraho_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Krahô.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C7EF876F756E31F642D2B6888014AD3D605C0D43</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/VicSoft/kraho_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C7EF876F756E31F642D2B6888014AD3D605C0D43</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C7EF876F756E31F642D2B6888014AD3D605C0D43</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kraho_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
