@@ -72,10 +72,16 @@ const GLubyte Indices[] = {
     float _curRed, _rotation;
     BOOL _increasing;
     
+    GLKVector3 _anchor_position;
+    GLKVector3 _current_position;
+    
     GLuint _vertexBuffer;
     GLuint _indexBuffer;
     
     GLKMatrix4 _rotMatrix;
+    
+    GLKQuaternion _quatStart;
+    GLKQuaternion _quat;
 }
 
 @property (strong, nonatomic) EAGLContext *context;
@@ -102,6 +108,9 @@ const GLubyte Indices[] = {
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Indices), Indices, GL_STATIC_DRAW);
     
     _rotMatrix = GLKMatrix4Identity;
+    
+    _quat = GLKQuaternionMake(0, 0, 0, 1);
+    _quatStart = GLKQuaternionMake(0, 0, 0, 1);
 }
 
 -(void) tearDownGL{
@@ -190,8 +199,55 @@ const GLubyte Indices[] = {
     self.effect.transform.modelviewMatrix = modelViewMatrix;
 }
 
--(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+- (GLKVector3) projectOntoSurface:(GLKVector3) touchPoint
+{
+    float radius = self.view.bounds.size.width/3;
+    GLKVector3 center = GLKVector3Make(self.view.bounds.size.width/2, self.view.bounds.size.height/2, 0);
+    GLKVector3 P = GLKVector3Subtract(touchPoint, center);
+    
+    // Flip the y-axis because pixel coords increase toward the bottom.
+    P = GLKVector3Make(P.x, P.y * -1, P.z);
+    
+    float radius2 = radius * radius;
+    float length2 = P.x*P.x + P.y*P.y;
+    
+    if (length2 <= radius2)
+        P.z = sqrt(radius2 - length2);
+    else
+    {
+        P.x *= radius / sqrt(length2);
+        P.y *= radius / sqrt(length2);
+        P.z = 0;
+    }
+    
+    return GLKVector3Normalize(P);
+}
 
+- (void)computeIncremental {
+    
+    GLKVector3 axis = GLKVector3CrossProduct(_anchor_position, _current_position);
+    float dot = GLKVector3DotProduct(_anchor_position, _current_position);
+    float angle = acosf(dot);
+    
+    GLKQuaternion Q_rot = GLKQuaternionMakeWithAngleAndVector3Axis(angle * 2, axis);
+    Q_rot = GLKQuaternionNormalize(Q_rot);
+    
+    // TODO: Do something with Q_rot...
+    
+}
+
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self computeIncremental];
+}
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self.view];
+    
+    _anchor_position = GLKVector3Make(location.x, location.y, 0);
+    _anchor_position = [self projectOntoSurface:_anchor_position];
+    
+    _current_position = _anchor_position;
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -210,5 +266,8 @@ const GLubyte Indices[] = {
     _rotMatrix = GLKMatrix4Rotate(_rotMatrix, rotX, xAxis.x, xAxis.y, xAxis.z);
     GLKVector3 yAxis = GLKMatrix4MultiplyVector3(GLKMatrix4Invert(_rotMatrix, &isInvertible), GLKVector3Make(0, 1, 0));
     _rotMatrix = GLKMatrix4Rotate(_rotMatrix, rotY, yAxis.x, yAxis.y, yAxis.z);
+    
+    _current_position = GLKVector3Make(location.x, location.y, 0);
+    _current_position = [self projectOntoSurface:_current_position];
 }
 @end
