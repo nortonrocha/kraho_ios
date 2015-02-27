@@ -195,6 +195,7 @@ const GLubyte Indices[] = {
 }
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self.view];
     CGPoint lastLoc = [touch previousLocationInView:self.view];
@@ -203,9 +204,11 @@ const GLubyte Indices[] = {
     float rotX = -1 * GLKMathDegreesToRadians(diff.y / 2.0);
     float rotY = -1 * GLKMathDegreesToRadians(diff.x / 2.0);
     
-    GLKVector3 xAxis = GLKVector3Make(1, 0, 0);
+    bool isInvertible;
+    
+    GLKVector3 xAxis = GLKMatrix4MultiplyVector3(GLKMatrix4Invert(_rotMatrix, &isInvertible), GLKVector3Make(1, 0, 0));
     _rotMatrix = GLKMatrix4Rotate(_rotMatrix, rotX, xAxis.x, xAxis.y, xAxis.z);
-    GLKVector3 yAxis = GLKVector3Make(0, 1, 0);
+    GLKVector3 yAxis = GLKMatrix4MultiplyVector3(GLKMatrix4Invert(_rotMatrix, &isInvertible), GLKVector3Make(0, 1, 0));
     _rotMatrix = GLKMatrix4Rotate(_rotMatrix, rotY, yAxis.x, yAxis.y, yAxis.z);
 }
 @end
