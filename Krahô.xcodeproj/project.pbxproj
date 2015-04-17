@@ -16,6 +16,9 @@
 		307986B21A7ECA0200831670 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307986B01A7ECA0200831670 /* LaunchScreen.xib */; };
 		307986BE1A7ECA0300831670 /* Kraho_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 307986BD1A7ECA0300831670 /* Kraho_Tests.m */; };
 		307986C81A7EDBC600831670 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307986C71A7EDBC600831670 /* OpenGLES.framework */; };
+		307B91381ABF647D0090B479 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307B91371ABF647D0090B479 /* UIKit.framework */; };
+		307B913A1ABF648C0090B479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307B91391ABF648C0090B479 /* Foundation.framework */; };
+		307B913C1ABF64B00090B479 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307B913B1ABF64B00090B479 /* CoreGraphics.framework */; };
 		30F77D4E1A8D158A00DE4F0B /* MainGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F77D4D1A8D158A00DE4F0B /* MainGLKViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		307986BC1A7ECA0300831670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		307986BD1A7ECA0300831670 /* Kraho_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kraho_Tests.m; sourceTree = "<group>"; };
 		307986C71A7EDBC600831670 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		307B91371ABF647D0090B479 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		307B91391ABF648C0090B479 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		307B913B1ABF64B00090B479 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		30F77D4C1A8D158A00DE4F0B /* MainGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGLKViewController.h; sourceTree = "<group>"; };
 		30F77D4D1A8D158A00DE4F0B /* MainGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGLKViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307B913C1ABF64B00090B479 /* CoreGraphics.framework in Frameworks */,
+				307B913A1ABF648C0090B479 /* Foundation.framework in Frameworks */,
+				307B91381ABF647D0090B479 /* UIKit.framework in Frameworks */,
 				3006F5471A83817C00490FFC /* GLKit.framework in Frameworks */,
 				3006F5451A83817200490FFC /* QuartzCore.framework in Frameworks */,
 				307986C81A7EDBC600831670 /* OpenGLES.framework in Frameworks */,
@@ -72,6 +81,9 @@
 		3006F5491A869C3D00490FFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				307B913B1ABF64B00090B479 /* CoreGraphics.framework */,
+				307B91391ABF648C0090B479 /* Foundation.framework */,
+				307B91371ABF647D0090B479 /* UIKit.framework */,
 				3006F5461A83817C00490FFC /* GLKit.framework */,
 				3006F5441A83817200490FFC /* QuartzCore.framework */,
 				307986C71A7EDBC600831670 /* OpenGLES.framework */,
@@ -82,9 +94,9 @@
 		307986951A7ECA0200831670 = {
 			isa = PBXGroup;
 			children = (
-				3006F5491A869C3D00490FFC /* Frameworks */,
 				307986A01A7ECA0200831670 /* Krahô */,
 				307986BA1A7ECA0300831670 /* KrahôTests */,
+				3006F5491A869C3D00490FFC /* Frameworks */,
 				3079869F1A7ECA0200831670 /* Products */,
 			);
 			sourceTree = "<group>";
